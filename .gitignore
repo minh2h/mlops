@@ -1,25 +1,20 @@
-/venv_mlops
-mlruns/
-myenv38/
-mlartifacts/
+# Python
 venv/
+myenv38/
+venv_mlops/
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.db
-*.sqlite
-*.egg-info/
-*.egg
-*.whl
-*.tar.gz
-*.zip
-*.log
-*.csv
-*.json
-*.parquet
-*.h5
-*.hdf5
-*.model
-*.onnx
-*.pb
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+
+# DVC
+*.dvc
+.cache/
+
+# Ignore MLflow artifacts
+price_prediction/mlruns/
+price_prediction/mlartifacts/
